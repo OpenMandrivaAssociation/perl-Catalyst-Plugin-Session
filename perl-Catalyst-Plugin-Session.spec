@@ -2,7 +2,7 @@
 %define name	perl-%{realname}
 %define	modprefix Catalyst
 
-%define version	0.13
+%define version	0.15
 %define release	%mkrel 1
 
 Summary:	Generic Session plugin for Catalyst
