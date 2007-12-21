@@ -26,6 +26,7 @@ BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::MockObject) >= 1.01
 BuildRequires:	perl(Test::More)
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The Session plugin is the base of two related parts of functionality required
