@@ -3,7 +3,7 @@
 %define	modprefix Catalyst
 
 %define version	0.19
-%define release	%mkrel 1
+%define release	%mkrel 3
 
 Summary:	Generic Session plugin for Catalyst
 Name:		%{name}
