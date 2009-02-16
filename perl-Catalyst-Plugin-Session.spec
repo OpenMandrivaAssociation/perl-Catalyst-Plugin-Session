@@ -13,9 +13,6 @@ License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{realname}/
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{modprefix}/%{realname}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-Buildrequires:	perl-devel
-%endif
 BuildRequires:	perl(Catalyst) >= 5.49
 BuildRequires:	perl(Digest)
 BuildRequires:	perl(File::Spec)
@@ -25,6 +22,7 @@ BuildRequires:	perl(Test::Deep)
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::MockObject) >= 1.01
 BuildRequires:	perl(Test::More)
+BuildRequires:	perl(MRO::Compat)
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -52,14 +50,11 @@ the two pieces together.
 rm -rf %{buildroot}
 %makeinstall_std
 
+%clean
+rm -rf %{buildroot}
+
 %files
 %defattr(-,root,root)
 %doc README
 %{perl_vendorlib}/%{modprefix}
 %{_mandir}/*/*
-
-%clean
-rm -rf %{buildroot}
-
-
-
