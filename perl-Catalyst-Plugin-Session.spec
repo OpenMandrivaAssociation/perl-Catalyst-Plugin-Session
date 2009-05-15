@@ -2,7 +2,7 @@
 %define name	perl-%{realname}
 %define	modprefix Catalyst
 
-%define version	0.20
+%define version	0.22
 %define release	%mkrel 1
 
 Summary:	Generic Session plugin for Catalyst
@@ -12,7 +12,7 @@ Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{realname}/
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{modprefix}/%{realname}-%{version}.tar.bz2
+Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{modprefix}/%{realname}-%{version}.tar.gz
 BuildRequires:	perl(Catalyst) >= 5.49
 BuildRequires:	perl(Digest)
 BuildRequires:	perl(File::Spec)
