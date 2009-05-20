@@ -1,7 +1,5 @@
-%define realname Catalyst-Plugin-Session
-%define name	perl-%{realname}
-%define	modprefix Catalyst
-
+%define module Catalyst-Plugin-Session
+%define name	perl-%{module}
 %define version	0.22
 %define release	%mkrel 1
 
@@ -11,8 +9,8 @@ Version:	%{version}
 Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{realname}/
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{modprefix}/%{realname}-%{version}.tar.gz
+URL:		http://search.cpan.org/dist/%{module}/
+Source:     http://www.cpan.org/modules/by-module/Catalyst/%{module}-%{version}.tar.gz
 BuildRequires:	perl(Catalyst) >= 5.49
 BuildRequires:	perl(Digest)
 BuildRequires:	perl(File::Spec)
@@ -23,8 +21,9 @@ BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::MockObject) >= 1.01
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(MRO::Compat)
+BuildRequires:	perl(MooseX::Emulate::Class::Accessor::Fast)
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The Session plugin is the base of two related parts of functionality required
@@ -37,7 +36,7 @@ may be revived for every request made by the same client. This plugin links
 the two pieces together.
 
 %prep
-%setup -q -n %{realname}-%{version}
+%setup -q -n %{module}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor < /dev/null
@@ -56,5 +55,5 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc README
-%{perl_vendorlib}/%{modprefix}
+%{perl_vendorlib}/Catalyst
 %{_mandir}/*/*
