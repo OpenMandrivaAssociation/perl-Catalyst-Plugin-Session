@@ -22,6 +22,7 @@ BuildRequires:	perl(Test::MockObject) >= 1.01
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(MRO::Compat)
 BuildRequires:	perl(MooseX::Emulate::Class::Accessor::Fast)
+BuildRequires:	perl-namespace-clean
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
