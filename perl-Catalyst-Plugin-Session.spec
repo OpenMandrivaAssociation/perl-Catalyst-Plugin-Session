@@ -1,6 +1,6 @@
 %define module Catalyst-Plugin-Session
 %define name	perl-%{module}
-%define version	0.22
+%define version	0.23
 %define release	%mkrel 1
 
 Summary:	Generic Session plugin for Catalyst
