@@ -1,9 +1,9 @@
 %define upstream_name    Catalyst-Plugin-Session
-%define upstream_version 0.31
+%define upstream_version 0.32
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Generic Session plugin for Catalyst
 License:	Artistic/GPL
