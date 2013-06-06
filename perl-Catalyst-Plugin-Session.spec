@@ -1,15 +1,14 @@
 %define upstream_name    Catalyst-Plugin-Session
-%define upstream_version 0.32
-
+%define upstream_version 0.36
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.36
+Release:	1
 
 Summary:	Generic Session plugin for Catalyst
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Catalyst/Catalyst-Plugin-Session-0.36.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Catalyst) >= 5.49
@@ -155,4 +154,5 @@ make test
 
 * Fri Dec 16 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.02-1mdk
 - Initial MDV RPM
+
 
