@@ -1,4 +1,5 @@
 removed_sources:
   Catalyst-Plugin-Session-0.32.tar.gz: b3290e58fcbd91e0649c98dcc86362ec3768ccc7
-sources:
   Catalyst-Plugin-Session-0.36.tar.gz: 9a473e063a3cf9f9652a8da26df5ffc14f308bc7
+sources:
+  Catalyst-Plugin-Session-0.39.tar.gz: 1c0de764a0d61e917f05dd568af3345b154b8874

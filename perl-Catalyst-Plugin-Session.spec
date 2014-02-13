@@ -1,5 +1,5 @@
 %define upstream_name    Catalyst-Plugin-Session
-%define upstream_version 0.36
+%define upstream_version 0.39
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
@@ -154,6 +154,7 @@ make test
 
 * Fri Dec 16 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.02-1mdk
 - Initial MDV RPM
+
 
 
 
