@@ -1,14 +1,14 @@
 %define upstream_name    Catalyst-Plugin-Session
-%define upstream_version 0.39
+%define upstream_version 0.44
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Generic Session plugin for Catalyst
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/Catalyst-Plugin-Session-%{upstream_version}.tar.gz
+Url:		https://github.com/perl-catalyst/Catalyst-Plugin-Session
+Source0:	https://cpan.metacpan.org/authors/id/H/HA/HAARG/Catalyst-Plugin-Session-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
