@@ -1,14 +1,13 @@
 %define upstream_name    Catalyst-Plugin-Session
-%define upstream_version 0.44
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.44
+Release:	2
 
 Summary:	Generic Session plugin for Catalyst
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		https://github.com/perl-catalyst/Catalyst-Plugin-Session
-Source0:	https://cpan.metacpan.org/authors/id/H/HA/HAARG/Catalyst-Plugin-Session-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/H/HA/HAARG/Catalyst-Plugin-Session-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -37,7 +36,7 @@ may be revived for every request made by the same client. This plugin links
 the two pieces together.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor < /dev/null
@@ -82,9 +81,7 @@ make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.250.0-1mdv2010.0
 + Revision: 406296
-- rebuild using %%perl_convert_version
-
-* Thu Jul 09 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.25-1mdv2010.0
+- rebuild using %0.44 Thu Jul 09 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.25-1mdv2010.0
 + Revision: 393775
 - update to new version 0.25
 
